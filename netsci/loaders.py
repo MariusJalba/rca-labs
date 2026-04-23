@@ -8,7 +8,7 @@ Available datasets::
 
     >>> from netsci.loaders import list_graphs
     >>> list_graphs()
-    ['airports', 'arxiv', 'email', 'facebook', 'football', 'got', 'karate', 'lesmis', 'powergrid']
+    ['airports', 'arxiv', 'email', 'facebook', 'football', 'got', 'karate', 'lesmis', 'powergrid', 'protein']
 
 Load any dataset by name::
 
@@ -27,6 +27,7 @@ Datasets
 - **email** -- EU email communication (1005 nodes, 25571 edges, directed)
 - **football** -- College football conferences (115 nodes, 613 edges, undirected)
 - **got** -- Game of Thrones interactions (796 nodes, 2823 edges, undirected)
+- **protein** -- Yeast protein interactions (1870 nodes, 2277 edges, undirected)
 """
 
 from pathlib import Path
@@ -46,6 +47,7 @@ _REGISTRY = {
     "email":     ("week3", "email.graphml",     int,  True),
     "football":  ("week5", "football.graphml",  str,  False),
     "got":       ("week5", "got.graphml",       str,  False),
+    "protein":   ("week2", "protein.graphml",  int,  False),
 }
 
 
